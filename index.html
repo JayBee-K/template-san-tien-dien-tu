@@ -48,13 +48,18 @@
     <div class="header-main">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-8 col-xl-9">
+                <div class="col-lg-8 col-xl-9 col-5">
                     <div class="header-flex d-flex align-items-lg-center">
                         <a href="" class="d-inline-block header-logo">
                             <img src="./assets/images/logo.png" class="img-fluid header-logo_image" alt="">
                         </a>
                         <div class="header-navigation" id="header-navigation">
                             <ul>
+                                <li class="navigation-logo d-flex d-lg-none">
+                                    <a href="" class="d-inline-flex align-middle">
+                                        <img src="./assets/images/logo.png" class="img-fluid">
+                                    </a>
+                                </li>
                                 <li>
                                     <a href="">
                                         Hướng dẫn sử dụng
@@ -102,17 +107,71 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-xl-3">
+                <div class="col-lg-4 col-xl-3 col-7">
                     <div class="header-action hstack align-items-center justify-content-end">
-                        <div class="header-action_item header-users hstack justify-content-end">
-                            <a href="" class="header-login">
-                                <i class="fas fa-user me-1"></i>
-                                Đăng nhập
-                            </a>
-                            <a href="" class="header-register button-theme button-theme_primary">
-                                <i class="fas fa-lock me-1"></i>
-                                Đăng ký
-                            </a>
+                        <div class="header-action_item header-users">
+                            <div class="d-none d-lg-flex align-items-center justify-content-end gap-20px">
+                                <a href="" class="header-login">
+                                    <i class="fas fa-user me-1"></i>
+                                    Đăng nhập
+                                </a>
+                                <a href="" class="header-register button-theme button-theme_primary">
+                                    <i class="fas fa-lock me-1"></i>
+                                    Đăng ký
+                                </a>
+                            </div>
+                            <!-- Đã đăng nhập
+                                <div class="header-users_dropdown position-relative">
+                                    <button type="button" class="header-login">
+                                        <i class="fas fa-user me-1"></i>Tài khoản
+                                    </button>
+                                    <ul class="header-users_list">
+                                        <li>
+                                            <a href="">
+                                                Quản lý tài khoản
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Ví
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Đơn hàng
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Đổi mật khẩu
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Đăng xuất
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                             -->
+                            <!-- Mobile -->
+                            <div class="header-users_dropdown d-block d-lg-none position-relative">
+                                <button type="button" class="header-login">
+                                    <i class="fas fa-user me-1"></i>Tài khoản
+                                </button>
+                                <ul class="header-users_list">
+                                    <li>
+                                        <a href="">
+                                            Đăng nhập
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Đăng ký
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="header-action_item header-language position-relative">
                             <button type="button" class="header-language_button">
@@ -132,6 +191,14 @@
                                     </a>
                                 </li>
                             </ul>
+                        </div>
+                        <div class="header-hamburger d-flex d-lg-none">
+                            <button type="button" class="hamburger-button" id="hamburger-button">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
                         </div>
                     </div>
                 </div>
