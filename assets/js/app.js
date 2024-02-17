@@ -108,6 +108,17 @@ let handleCallMenu = function () {
     }
 }
 
+const handleStickHeader = function () {
+    $(window).scroll(function (e) {
+        if ($(document).scrollTop() > $('#header').innerHeight()) {
+            $('#header').addClass('is-scroll');
+        } else {
+            $('#header').removeClass('is-scroll');
+        }
+    });
+}
+
+
 const handleCopyValue = function () {
     const copyButtons = document.querySelectorAll('.button-copy');
     if (copyButtons) {
@@ -175,6 +186,7 @@ $(function () {
         handleApplyCollapse($('#header-navigation > ul'));
         handleCallMenu();
     })
+    handleStickHeader();
     handleCopyValue();
     handleInitFancybox();
     handleViewPass();
@@ -211,5 +223,13 @@ $(function () {
                 }
             },
         });
+    }
+
+    if ($('.tabHandle').length) {
+        $('.tabHandle').on('show.bs.tab', function () {
+            let target = $(this).attr('data-id');
+            $('.tabContent').addClass('d-none')
+            $(target).removeClass('d-none');
+        })
     }
 });
