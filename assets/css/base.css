@@ -1,6 +1,6 @@
 :root {
     --transition-default: 0.3s all ease-in-out;
-    --font-theme: 'Libre Franklin', Arial, Helvetica, sans-serif;
+    --font-theme: 'Open Sans', Arial, Helvetica, sans-serif;
     --size-theme: 14px;
     --bs-border-radius-sm: 0;
     --bs-card-border-radius: 0;
@@ -306,6 +306,14 @@ input[type='number'] {
     font-size: 1.75em;
 }
 
+.fz-inherit {
+	font-size: inherit !important
+}
+
+.color-inherit{
+	color: inherit !important
+}
+
 .mw-25px {
     min-width: 25px !important;
 }
@@ -321,7 +329,6 @@ input[type='number'] {
 .mw-100px {
     min-width: 100px !important;
 }
-
 
 .button-theme {
     padding: 6px 16px;
