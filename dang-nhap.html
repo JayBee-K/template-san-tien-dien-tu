@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <title>Đăng nhập - Sàn tiền điện tử</title>
+    <meta name="description" content="Sàn tiền điện tử">
+    <meta name="author" content="">
+
+    <meta property="og:title" content="Sàn tiền điện tử">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:description" content="Sàn tiền điện tử">
+    <meta property="og:image" content="./assets/images/logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+          rel="stylesheet">
+
+
+    <link rel="icon" href="./assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="./assets/images/favicon.png">
+    <link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/plugins/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/plugins/fancybox/fancybox.min.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
+    <style>
+        :root {
+            --primary-color: #314084;
+            --primary-hover: #263370;
+            --primary-rgb: 49, 64, 132;
+            --secondary-color: #F59C00;
+            --secondary-hover: #ffb12b;
+            --secondary-rgb: 245, 156, 0;
+        }
+    </style>
+</head>
+<body class="is-page">
+
+<div id="header" class="header">
+    <div class="header-main">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 col-xl-9 col-5">
+                    <div class="header-flex d-flex align-items-lg-center">
+                        <a href="" class="d-inline-block header-logo">
+                            <img src="./assets/images/logo.png" class="img-fluid header-logo_image" alt="">
+                        </a>
+                        <div class="header-navigation" id="header-navigation">
+                            <ul>
+                                <li class="navigation-logo d-flex d-lg-none">
+                                    <a href="" class="d-inline-flex align-middle">
+                                        <img src="./assets/images/logo.png" class="img-fluid">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Hướng dẫn sử dụng
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Đối tác
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Bảo hiểm
+                                        <i class="fas fa-caret-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="">Bảo hiểm mua</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Bảo hiểm bán</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Bảo hiểm trao đổi</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Bảo hiểm chuyển tiền NH</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Xác minh
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">Chiết khấu</a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Liên hệ
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-xl-3 col-7">
+                    <div class="header-action hstack align-items-center justify-content-end">
+                        <div class="header-action_item header-users">
+                            <div class="d-none d-lg-flex align-items-center justify-content-end gap-20px">
+                                <a href="" class="header-login">
+                                    <i class="fas fa-user me-1"></i>
+                                    Đăng nhập
+                                </a>
+                                <a href="" class="header-register button-theme button-theme_primary">
+                                    <i class="fas fa-lock me-1"></i>
+                                    Đăng ký
+                                </a>
+                            </div>
+                            <!-- Đã đăng nhập
+                            <div class="d-lg-flex align-items-center justify-content-end gap-20px">
+                                <div class="header-users_dropdown position-relative">
+                                    <button type="button" class="header-login">
+                                        <i class="fas fa-user me-1"></i>Tài khoản
+                                    </button>
+                                    <ul class="header-users_list">
+                                        <li>
+                                            <a href="">
+                                                Quản lý tài khoản
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Ví
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Đơn hàng
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Đổi mật khẩu
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Đăng xuất
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="d-none d-flex align-items-center justify-content-end gap-20px">
+                                    <span class="header-register button-theme button-theme_primary">
+                                        <i class="fas fa-wallet me-1"></i>
+                                        1,000,000,000 VND
+                                    </span>
+                                </div>
+                            </div>
+                             -->
+                            <!-- Mobile -->
+                            <div class="header-users_dropdown d-block d-lg-none position-relative">
+                                <button type="button" class="header-login">
+                                    <i class="fas fa-user me-1"></i>Tài khoản
+                                </button>
+                                <ul class="header-users_list">
+                                    <li>
+                                        <a href="">
+                                            Đăng nhập
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Đăng ký
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header-action_item header-language position-relative">
+                            <button type="button" class="header-language_button">
+                                <img src="./assets/images/language/vn.png" class="img-fluid" alt="">
+                            </button>
+                            <ul class="header-language_list">
+                                <li>
+                                    <a href="">
+                                        <img src="./assets/images/language/vn.png" class="img-fluid" alt="">
+                                        Tiếng Việt
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="./assets/images/language/en.png" class="img-fluid" alt="">
+                                        English
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header-hamburger d-flex d-lg-none">
+                            <button type="button" class="hamburger-button" id="hamburger-button">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-overlay" id="header-overlay"></div>
+</div>
+
+<div id="main" class="main">
+    <div class="section-gap section-page">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-5">
+                    <div class="section-exchange">
+                        <div class="exchange-card">
+                            <div class="exchange-card_body p-4">
+                                <div class="section-heading mb-4">
+                                    <div class="heading-page heading-color text-center">
+                                        ĐĂNG NHẬP
+                                    </div>
+                                </div>
+                                <form action="" class="form-theme">
+                                    <div class="row g-3">
+                                        <div class="col-12">
+                                            <label for="" class="form-theme_label">
+                                                <i class="fal h6 mb-0 fa-user-alt me-1"></i>Email hoặc Số điện thoại:
+                                            </label>
+                                            <input type="password" class="form-theme_control"
+                                                   placeholder="Nhập Email hoặc Số điện thoại">
+                                        </div>
+                                        <div class="col-12">
+                                            <label for="" class="form-theme_label">
+                                                <i class="fal h6 mb-0 fa-lock-alt me-1"></i>Mật khẩu:
+                                            </label>
+                                            <div class="form-theme_group">
+                                                <input type="password" class="form-theme_control"
+                                                       id="passwordLogin"
+                                                       placeholder="Nhập mật khẩu">
+                                                <button type="button" class="form-theme_button buttonViewPassword"
+                                                        data-id="passwordLogin">
+                                                    <i class="fas fa-eye"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <label for="" class="form-theme_label">
+                                                <i class="fal h6 mb-0 fa-qrcode me-1"></i>Mã bảo mật:
+                                            </label>
+                                            <div class="row g-3">
+                                                <div class="col-md-8">
+                                                    <input type="text" class="form-theme_control"
+                                                           placeholder="Nhập mã bảo mật">
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <img class="img-fluid w-100"
+                                                         src="https://www.netpay.vn/captcha?a=1708235827080"
+                                                         id="myImage">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="row g-3">
+                                                <div class="col-6">
+                                                    <div class="form-theme_check">
+                                                        <input id="checkbox-example-1" type="checkbox"
+                                                               class="form-theme_checkbox">
+                                                        <label for="checkbox-example-1" class="form-theme_checktext">
+                                                            <span></span>
+                                                            Ghi nhớ?
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 text-end">
+                                                    <a href="">
+                                                        Quên mật khẩu?
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 mt-4 text-center vstack gap-10px">
+                                            <div class="text-center">
+                                                <button type="submit"
+                                                        class="button-theme button-theme_primary">
+                                                    <i class="fas fa-check me-1"></i>
+                                                    Đăng nhập
+                                                </button>
+                                            </div>
+                                            <div class="text-muted">
+                                                Chưa có tài khoản? <a href="">Đăng ký</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer id="footer" class="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="footer-item">
+                        <a href="" class="d-inline-block footer-logo">
+                            <img src="./assets/images/logo.png" class="img-fluid footer-logo_image" alt="">
+                        </a>
+                        <div class="footer-title">
+                            Sàn giao dịch tiền điện tử lớn nhất Việt Nam
+                        </div>
+                        <div class="footer-sub">
+                            Giúp giao dịch tiền điện tử của bạn trở nên dễ dàng và an toàn nhất
+                        </div>
+                        <div class="footer-contact">
+                            <div class="footer-contact_item">
+                                Hotline:
+                                <a href="" class="d-inline-block color-inherit fw-bold">
+                                    0977 461 416
+                                </a>
+                            </div>
+                            <div class="footer-contact_item">
+                                Email:
+                                <a href="" class="d-inline-block color-inherit fw-bold">
+                                    danhmay24h@gmail.com
+                                </a>
+                            </div>
+                        </div>
+                        <div class="footer-social">
+                            <a href="" class="footer-social_item">
+                                <img src="./assets/images/social/facebook.png" class="rounded-circle img-fluid" alt="">
+                            </a>
+                            <a href="" class="footer-social_item">
+                                <img src="./assets/images/social/instagram.png" class="rounded-circle img-fluid" alt="">
+                            </a>
+                            <a href="" class="footer-social_item">
+                                <img src="./assets/images/social/zalo.png" class="rounded-circle img-fluid" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="row g-4">
+                        <div class="col-6 col-lg-4">
+                            <div class="footer-list">
+                                <div class="footer-list_title">
+                                    Mua tiền ảo
+                                </div>
+                                <div class="footer-list_items">
+                                    <a href="" class="d-inline-block footer-list_item">
+                                        Mua Bitcoin
+                                    </a>
+                                    <a href="" class="d-inline-block footer-list_item">
+                                        Mua ETH
+                                    </a>
+                                    <a href="" class="d-inline-block footer-list_item">
+                                        Mua Usdt
+                                    </a>
+                                    <a href="" class="d-inline-block footer-list_item">
+                                        Mua Perfectmoney
+                                    </a>
+                                    <a href="" class="d-inline-block footer-list_item">
+                                        Mua Webmoney
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-4">
+                            <div class="footer-list">
+                                <div class="footer-list_title">
+                                    Bán tiền ảo
+                                </div>
+                                <div class="footer-list_items">
+                                    <a href="" class="d-inline-block footer-list_item">
+                                        Bán Bitcoin
+                                    </a>
+                                    <a href="" class="d-inline-block footer-list_item">
+                                        Bán ETH
+                                    </a>
+                                    <a href="" class="d-inline-block footer-list_item">
+                                        Bán Usdt
+                                    </a>
+                                    <a href="" class="d-inline-block footer-list_item">
+                                        Bán Perfectmoney
+                                    </a>
+                                    <a href="" class="d-inline-block footer-list_item">
+                                        Bán Webmoney
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-4">
+                            <div class="footer-list">
+                                <div class="footer-list_title">
+                                    Thông tin
+                                </div>
+                                <div class="footer-list_items">
+                                    <a href="" class="d-inline-block footer-list_item">
+                                        vnexmoney.com là web SCAM
+                                    </a>
+                                    <a href="" class="d-inline-block footer-list_item">
+                                        Quản lý rủi ro
+                                    </a>
+                                    <a href="" class="d-inline-block footer-list_item">
+                                        Quy định sử dụng
+                                    </a>
+                                    <a href="" class="d-inline-block footer-list_item">
+                                        Hướng dẫn sử dụng
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row g-3 align-items-center flex-column-reverse flex-lg-row">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <a href="" class="d-inline-block text-white footer-copyright">
+                        ©Software by santiendientu Jsc.,
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <div class="footer-partner hstack justify-content-lg-end justify-content-center">
+                        <a href="" class="footer-partner_item">
+                            <img src="./assets/images/pm_cert.png" class="img-fluid" alt="">
+                            U5553623
+                        </a>
+                        <a href="" class="footer-partner_item">
+                            <img src="./assets/images/v_blue_on_white_en.png" class="img-fluid" alt="">
+                            292211010733
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type=" text/javascript" src="./assets/plugins/jquery.min.js"></script>
+<script type="text/javascript"
+        src="./assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/swiper/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/fancybox/fancybox.min.js"></script>
+<script type="text/javascript" src="./assets/js/app.js"></script>
+</body>
+</html>

@@ -20,6 +20,10 @@
     margin-bottom: 0;
 }
 
+.section-heading .heading-color {
+    color: var(--primary-color);
+}
+
 .header {
     position: fixed;
     top: 0;
@@ -705,7 +709,7 @@
     top: 50%;
     transform: translateY(-50%);
     right: 8px;
-    background-color: var(--bs-white);
+    background-color: transparent;
     display: flex;
     align-items: center;
     gap: 4px;
@@ -750,9 +754,9 @@
 }
 
 .form-theme .form-theme_check .form-theme_checktext > span {
-    font-size: 20px;
+    font-size: 16px;
     position: relative;
-    top: 5px;
+    top: 3px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -778,7 +782,7 @@
 .form-theme .form-theme_check .form-theme_checkbox:checked + .form-theme_checktext > span:before {
     content: "";
     position: absolute;
-    top: -0.05em;
+    top: -0.1em;
     left: -0.3em;
     border-right: 2px solid transparent;
     border-bottom: 2px solid transparent;
