@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <title>Chi tiết tin tức - Sàn tiền điện tử</title>
+    <meta name="description" content="Sàn tiền điện tử">
+    <meta name="author" content="">
+
+    <meta property="og:title" content="Sàn tiền điện tử">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:description" content="Sàn tiền điện tử">
+    <meta property="og:image" content="./assets/images/logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+          rel="stylesheet">
+
+
+    <link rel="icon" href="./assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="./assets/images/favicon.png">
+    <link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/plugins/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/plugins/fancybox/fancybox.min.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
+    <style>
+        :root {
+            --primary-color: #314084;
+            --primary-hover: #263370;
+            --primary-rgb: 49, 64, 132;
+            --secondary-color: #F59C00;
+            --secondary-hover: #ffb12b;
+            --secondary-rgb: 245, 156, 0;
+        }
+    </style>
+</head>
+<body class="is-page">
+
+<div id="header" class="header">
+    <div class="header-main">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 col-xl-9 col-5">
+                    <div class="header-flex d-flex align-items-lg-center">
+                        <a href="" class="d-inline-block header-logo">
+                            <img src="./assets/images/logo.png" class="img-fluid header-logo_image" alt="">
+                        </a>
+                        <div class="header-navigation" id="header-navigation">
+                            <ul>
+                                <li class="navigation-logo d-flex d-lg-none">
+                                    <a href="" class="d-inline-flex align-middle">
+                                        <img src="./assets/images/logo.png" class="img-fluid">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Hướng dẫn sử dụng
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Đối tác
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Bảo hiểm
+                                        <i class="fas fa-caret-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="">Bảo hiểm mua</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Bảo hiểm bán</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Bảo hiểm trao đổi</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Bảo hiểm chuyển tiền NH</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Xác minh
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">Chiết khấu</a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Liên hệ
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-xl-3 col-7">
+                    <div class="header-action hstack align-items-center justify-content-end">
+                        <div class="header-action_item header-users">
+                            <div class="d-none d-lg-flex align-items-center justify-content-end gap-20px">
+                                <a href="" class="header-login">
+                                    <i class="fas fa-user me-1"></i>
+                                    Đăng nhập
+                                </a>
+                                <a href="" class="header-register button-theme button-theme_primary">
+                                    <i class="fas fa-lock me-1"></i>
+                                    Đăng ký
+                                </a>
+                            </div>
+                            <!-- Đã đăng nhập
+                            <div class="d-lg-flex align-items-center justify-content-end gap-20px">
+                                <div class="header-users_dropdown position-relative">
+                                    <button type="button" class="header-login">
+                                        <i class="fas fa-user me-1"></i>Tài khoản
+                                    </button>
+                                    <ul class="header-users_list">
+                                        <li>
+                                            <a href="">
+                                                Quản lý tài khoản
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Ví
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Đơn hàng
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Đổi mật khẩu
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Đăng xuất
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="d-none d-flex align-items-center justify-content-end gap-20px">
+                                    <span class="header-register button-theme button-theme_primary">
+                                        <i class="fas fa-wallet me-1"></i>
+                                        1,000,000,000 VND
+                                    </span>
+                                </div>
+                            </div>
+                             -->
+                            <!-- Mobile -->
+                            <div class="header-users_dropdown d-block d-lg-none position-relative">
+                                <button type="button" class="header-login">
+                                    <i class="fas fa-user me-1"></i>Tài khoản
+                                </button>
+                                <ul class="header-users_list">
+                                    <li>
+                                        <a href="">
+                                            Đăng nhập
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Đăng ký
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header-action_item header-language position-relative">
+                            <button type="button" class="header-language_button">
+                                <img src="./assets/images/language/vn.png" class="img-fluid" alt="">
+                            </button>
+                            <ul class="header-language_list">
+                                <li>
+                                    <a href="">
+                                        <img src="./assets/images/language/vn.png" class="img-fluid" alt="">
+                                        Tiếng Việt
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="./assets/images/language/en.png" class="img-fluid" alt="">
+                                        English
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header-hamburger d-flex d-lg-none">
+                            <button type="button" class="hamburger-button" id="hamburger-button">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-overlay" id="header-overlay"></div>
+</div>
+
+<div id="main" class="main">
+    <div class="section-gap section-page">
+        <div class="container">
+            <div class="article-detail">
+                <h1 class="article-title">
+                    DỊCH VỤ THIẾT KẾ WEBSITE ĐỔI THẺ CÀO THÀNH TIỀN MẶT
+                </h1>
+                <div class="section-breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="#">Trang chủ</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#">Tin tức</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#">Bài viết</a>
+                        </li>
+                        <li class="breadcrumb-item active">
+                            Breadcrumb active
+                        </li>
+                    </ol>
+                </div>
+                <div class="detail-content" id="detail-content">
+                    <p>Trong thời đại số ngày nay, dịch vụ <em>giao dịch trung gian game</em> đã trở thành một phần
+                        không thể thiếu trong cộng đồng game thủ. Bài viết này sẽ đào sâu vào khái niệm này, phân tích
+                        những ưu điểm và nhược điểm của dịch vụ <em><strong>giao dịch trung gian game</strong></em>,
+                        đồng thời tìm hiểu về cách chúng ảnh hưởng đến trải nghiệm chơi game.</p>
+
+                    <h2><span style="color:#d35400;"><strong>Khái niệm cơ bản về giao dịch trung gian
+                        game</strong></span></h2>
+
+                    <p><em>Giao dịch trung gian game</em> đề cập đến quá trình mà người chơi không trực tiếp thực hiện
+                        mua bán hay trao đổi tài khoản trong trò chơi với nhau. Thay vào đó, họ sử dụng dịch vụ trung
+                        gian để đảm bảo an toàn và tính minh bạch trong các giao dịch. Điều này có thể liên quan đến
+                        việc mua bán vật phẩm, tài khoản, hay thậm chí là tiền ảo trong trò chơi.</p>
+
+                    <h2><span style="color:#d35400;"><strong>Những dịch vụ giao dịch trung gian phổ biến</strong></span>
+                    </h2>
+
+                    <h3><strong>1. Sàn thương mại game</strong></h3>
+
+                    <p>Các sàn thương mại trực tuyến chuyên về game cung cấp nền tảng an toàn cho người chơi trao đổi
+                        vật phẩm và tài khoản trong trò chơi. Điều này giúp họ tránh được những rủi ro liên quan đến
+                        giao dịch trực tiếp.</p>
+
+                    <h3><strong>2. Dịch vụ môi giới tài khoản</strong></h3>
+
+                    <p>Một số dịch vụ chuyên nghiệp môi giới tài khoản game giúp người chơi chuyển giao quyền kiểm soát
+                        của tài khoản cùng với các thành tựu và vật phẩm có giá trị.</p>
+
+                    <h3><strong>3. Nền tảng chuyển đổi tiền ảo</strong></h3>
+
+                    <p>Có các nền tảng dành riêng để chuyển đổi tiền ảo giữa các game, tạo ra một hệ sinh thái kinh tế
+                        ảo có thể tương tác được.</p>
+
+                    <h2><span style="color:#d35400;"><strong>Ưu điểm của dịch vụ giao dịch trung gian
+                        game</strong></span></h2>
+
+                    <h3><strong>1. An toàn và bảo mật</strong></h3>
+
+                    <p>Một trong những ưu điểm lớn nhất của việc sử dụng <em>dịch vụ giao dịch trung gian trong
+                        game</em> là đảm bảo an toàn và bảo mật cho cả người mua và người bán. các sàn thương mại và
+                        dịch vụ môi giới thường áp dụng các biện pháp an ninh nâng cao để ngăn chặn gian lận và tránh
+                        rủi ro mất tài khoản.</p>
+
+                    <h3><strong>2. Tiện lợi và nhanh chóng</strong></h3>
+
+                    <p>Dịch vụ giao dịch trung gian giúp tăng cường tiện ích trong quá trình mua bán và trao đổi trong
+                        thế giới game. người chơi có thể truy cập các sàn thương mại mọi lúc, mọi nơi và dễ dàng thực
+                        hiện các giao dịch một cách nhanh chóng.</p>
+
+                    <h3><strong>3. Phát triển kinh tế game</strong></h3>
+
+                    <p>Qua việc tạo ra một thị trường chuyển động và phong phú, dịch vụ <strong>giao dịch trung gian
+                        game</strong> còn giúp thúc đẩy phát triển kinh tế nội tại của trò chơi. Người chơi có cơ hội
+                        kiếm lợi nhuận từ hoạt động trong game và tạo nên một môi trường kinh doanh ảo.</p>
+
+                    <h2><span style="color:#d35400;"><strong>Nhược điểm và rủi ro</strong></span></h2>
+
+                    <h3><strong>1. Bị lừa dối và hàng giả mạo</strong></h3>
+
+                    <p>Mặc dù có những biện pháp bảo mật cao, nhưng nguy cơ mua phải vật phẩm giả mạo vẫn là một rủi ro
+                        đối với người chơi. Họ có thể bị lừa dối bởi các gian lận về chất lượng hoặc giá trị của sản
+                        phẩm.</p>
+
+                    <h3><strong>2. Xâm phạm chính sách game</strong></h3>
+
+                    <p>Giao dịch trung gian thường xuyên xâm phạm chính sách của nhà phát triển và nhà quản lý trò chơi.
+                        Điều này có thể dẫn đến những hình phạt nặng, kể cả việc khóa tài khoản vĩnh viễn.</p>
+
+                    <h3><strong>3. Rủi ro pháp lý</strong></h3>
+
+                    <p>Việc mua bán tài khoản game và vật phẩm có thể xâm phạm các điều khoản và điều kiện của nhà phát
+                        triển, và có thể đưa ra rủi ro pháp lý cho cả người mua và người bán.</p>
+
+                    <h2><span style="color:#d35400;"><strong>Cách tận dụng dịch vụ giao dịch trung gian game một cách an
+                        toàn</strong></span></h2>
+
+                    <h3><strong>1. Chọn lựa sàn thương mại tin cậy</strong></h3>
+
+                    <p>Người chơi nên chọn sàn thương mại có uy tín và đánh giá tích cực từ cộng đồng. Những sàn này
+                        thường có các biện pháp an ninh mạnh mẽ để bảo vệ người dùng.</p>
+
+                    <h3><strong>2. Tuân thủ chính sách game</strong></h3>
+
+                    <p>Để tránh rủi ro pháp lý, người chơi nên tuân thủ chặt chẽ các chính sách và điều khoản của nhà
+                        phát triển trò chơi. Việc này giúp bảo vệ tài khoản của họ khỏi những hậu quả không mong
+                        muốn.</p>
+
+                    <h3><strong>3. Đánh giá người bán và mua</strong></h3>
+
+                    <p>Trước khi thực hiện giao dịch, người chơi nên kiểm tra đánh giá và danh tiếng của người bán hoặc
+                        mua. Điều này có thể cung cấp thông tin quan trọng về tính trung thực và đáng tin cậy của
+                        họ.</p>
+
+                    <h2><span style="color:#d35400;"><strong>Checkscam.com - Dịch vụ đảm bảo giao dịch game online uy
+                        tín</strong></span></h2>
+
+                    <p><a href="https://checkscam.com/">CheckScam.com</a> là đối tác đáng tin cậy của cộng đồng game
+                        thủ, mang đến cho bạn sự an tâm khi tham gia giao dịch trong thế giới game online. Chúng tôi
+                        chuyên cung cấp dịch vụ đảm bảo tính minh bạch và uy tín cho mọi giao dịch của bạn.</p>
+
+                    <p>Đội ngũ chuyên gia của chúng tôi kiểm tra và xác minh đội ngũ người chơi, đảm bảo rằng bạn đang
+                        giao dịch với những đối tác đáng tin cậy. Hãy trải nghiệm sự thuận tiện và an toàn với
+                        <em><strong>CheckScam.com</strong></em> để tận hưởng thế giới game online mà không lo lắng về
+                        rủi ro lừa đảo.</p>
+
+                    <h2><span style="color:#d35400;"><strong>Kết luận</strong></span></h2>
+
+                    <p>Dịch vụ giao dịch trung gian game không chỉ là một phần quan trọng của cộng đồng game thủ, mà còn
+                        là một khía cạnh quan trọng của ngành công nghiệp game ngày nay. Bằng cách hiểu rõ về ưu và
+                        nhược điểm, người chơi có thể tận dụng dịch vụ này một cách an toàn và có lợi cho trải nghiệm
+                        của mình trong thế giới game online đầy thách thức và cơ hội.</p>
+                    <p>
+                        <strong>Nencer Software</strong> là một công ty chuyên về phát triển và thiết kế
+                        website, với nhiều năm
+                        kinh nghiệm trong thiết kế web và phần mềm quản lý.
+                        Chúng tôi tự hào là một trong những
+                        công ty hàng đầu trong việc cung cấp dịch vụ thiết kế
+                        website đổi thẻ hiện đại, đáng tin
+                        cậy, và phù hợp với mọi nhu cầu của khách hàng.
+                    </p>
+                    <blockquote>
+                        Đây là nội dung trích dẫn ây là nội dung trích dẫn <strong>Nencer Software</strong> là
+                        một công ty chuyên về phát triển và thiết kế
+                        website, với nhiều năm
+                        kinh nghiệm trong thiết kế web và phần mềm quản lý. Chúng tôi tự hào là một trong những
+                        công ty hàng đầu trong việc cung cấp dịch vụ thiết kế website đổi thẻ hiện đại, đáng tin
+                        cậy, và phù hợp với mọi nhu cầu của khách hàng.
+                    </blockquote>
+                    <h2>
+                        Tiêu đề này dùng thẻ heading h3
+                    </h2>
+                    <h3>
+                        Tiêu đề này dùng thẻ heading h3
+                    </h3>
+                    <h4>
+                        Tiêu đề này dùng thẻ heading h4
+                    </h4>
+                    <h5>
+                        Tiêu đề này dùng thẻ heading h5
+                    </h5>
+                    <h6>
+                        Tiêu đề này dùng thẻ heading h6 (kích thước chữ bằng với nội dung)
+                    </h6>
+                    <ul>
+                        <li>
+                            Đây là danh sách không có số thứ tự
+                        </li>
+                        <li>
+                            Đây là danh sách không có số thứ tự
+                        </li>
+                        <li>
+                            Đây là danh sách không có số thứ tự
+                        </li>
+                        <li>
+                            Đây là danh sách không có số thứ tự
+                        </li>
+                        <li>
+                            Đây là danh sách không có số thứ tự
+                        </li>
+                    </ul>
+                    <ol>
+                        <li>
+                            Đây là danh sách có số thứ tự
+                        </li>
+                        <li>
+                            Đây là danh sách có số thứ tự
+                        </li>
+                        <li>
+                            Đây là danh sách có số thứ tự
+                        </li>
+                        <li>
+                            Đây là danh sách có số thứ tự
+                        </li>
+                        <li>
+                            Đây là danh sách có số thứ tự
+                        </li>
+                    </ol>
+                    <p>
+                        Dịch vụ <a href="">thiết kế website đổi thẻ</a> của Nencer Software mang đến cho bạn một
+                        giải pháp hoàn
+                        hảo để xây dựng trang web đổi thẻ hiện đại, chuyên nghiệp và tối ưu hóa cho trải nghiệm
+                        người dùng tốt nhất. Với sự cam kết về chất lượng và sáng tạo, chúng tôi hy vọng có cơ
+                        hội hợp tác và giúp bạn đạt được mục tiêu trực tuyến của mình.
+                    </p>
+                    <p>
+                        <img src="https://nencer.com/storage/userfiles/files/thiet-ke-website-doi-the-cao-thanh-tien-mat.JPG"
+                             alt="">
+                    </p>
+                    <h2>
+                        Lợi ích của việc sử dụng dịch vụ thiết kế website đổi thẻ từ Nencer Software
+                    </h2>
+                    <p>
+                        Khi bạn chọn dịch vụ thiết kế website đổi thẻ từ Nencer Software, bạn sẽ được hưởng
+                        nhiều lợi ích quan trọng:
+                    </p>
+                    <h3>
+                        1: Thiết kế chuyên nghiệp
+                    </h3>
+                    <p>
+                        Chúng tôi có đội ngũ thiết kế chuyên nghiệp với nhiều năm kinh nghiệm trong việc tạo ra
+                        các trang web đổi thẻ chất lượng cao, phù hợp với mọi nhu cầu của bạn.
+                    </p>
+                    <h3>2: Công nghệ mới nhất</h3>
+                    <p>
+                        Nencer Software luôn cập nhật với công nghệ và xu hướng mới nhất trong <em>thiết kế
+                        website đổi
+                        thẻ</em>.
+                        Chúng tôi sử dụng các công cụ và ngôn ngữ lập trình hiện đại như
+                        HTML5, CSS3, JavaScript, và Responsive Web Design để đảm bảo trang web của bạn luôn đẹp
+                        và hiệu quả trên mọi thiết bị.
+                    </p>
+                    <p>
+                        Các phần mềm của chúng tôi cung cấp đều được thiết kế rất chuyên nghiệp và tỉ mỉ. Đối
+                        với những khách hàng VIP, chúng tôi nhận hỗ trợ từ 24/7 không ngày nghỉ lễ. Chúng tôi sẽ
+                        giúp cho khách hàng tối ưu chi phí và nhân lực bằng việc tự động hóa sản phẩm. Quý khách
+                        muốn mua sản phẩm chỉ cần thanh toán trực tuyến. Hệ thống sẽ nhận và hỗ trợ 24/24.
+                    </p>
+                    <div class="table-responsive">
+                        <table align="center" border="1" cellpadding="1" cellspacing="1" style="width: 100%;"
+                               class="table table-bordered">
+                            <tbody>
+                            <tr>
+                                <td style="text-align: center;"><span style="font-size:18px;"><strong>Quy
+                                    mô</strong></span>
+                                </td>
+                                <td style="text-align: center;"><span style="font-size:18px;"><strong>Tính năng&nbsp;
+                                    phần
+                                    mềm</strong></span>
+                                </td>
+                                <td style="text-align: center;"><span style="font-size:18px;"><strong>Báo giá phần
+                                    mềm</strong></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;"><strong><span style="font-size:16px;">Phòng khám
+                                    chuyên
+                                    khoa</span></strong>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li><span style="font-size:16px;">Quản lý tiếp đón</span></li>
+                                        <li><span style="font-size:16px;">Quản lý kế toán - Thu ngân</span></li>
+                                        <li><span style="font-size:16px;">Quản lý kho thuốc – vật tư y tế</span>
+                                        </li>
+                                        <li><span style="font-size:16px;">Quản lý đội ngũ y bác sĩ, nhân viên</span>
+                                        </li>
+                                        <li><span style="font-size:16px;">Quản lý và tạo lập đơn thuốc</span></li>
+                                        <li><span style="font-size:16px;">Kết nối máy ngoại vi</span></li>
+                                        <li><span style="font-size:16px;">Thống kê, báo cáo</span></li>
+                                        <li><span style="font-size:16px;">Lưu trữ lịch sử, hồ sơ khám bệnh</span>
+                                        </li>
+                                        <li><span style="font-size:16px;">Hẹn lịch khám, nhắc lịch khám</span></li>
+                                    </ul>
+                                </td>
+                                <td><span style="font-size:16px;">2.000.000 VNĐ</span></td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;"><strong><span style="font-size:16px;">Phòng khám đa
+                                    khoa</span></strong>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li><span style="font-size:16px;">Quản lý tiếp đón</span></li>
+                                        <li><span style="font-size:16px;">Quản lý khoa phòng</span></li>
+                                        <li><span style="font-size:16px;">Quản lý bệnh nhân điều trị ngoại
+                                            trú</span></li>
+                                        <li><span style="font-size:16px;">Quản lý kế toán - Thu ngân</span></li>
+                                        <li><span style="font-size:16px;">Quản lý kho thuốc – vật tư y tế</span>
+                                        </li>
+                                        <li><span style="font-size:16px;">Quản lý đội ngũ y bác sĩ, nhân viên</span>
+                                        </li>
+                                        <li><span style="font-size:16px;">Quản lý và tạo lập đơn thuốc</span></li>
+                                        <li><span style="font-size:16px;">Kết nối máy ngoại vi</span></li>
+                                        <li><span style="font-size:16px;">Thống kê, báo cáo</span></li>
+                                        <li><span style="font-size:16px;">Lưu trữ lịch sử, hồ sơ khám bệnh</span>
+                                        </li>
+                                        <li><span style="font-size:16px;">Hẹn lịch khám, nhắc lịch khám</span></li>
+                                        <li><span style="font-size:16px;">In tem bệnh nhân</span></li>
+                                        <li><span style="font-size:16px;">Quản lý viện phí</span></li>
+                                        <li><span style="font-size:16px;">Liên thông BHXH</span></li>
+                                        <li><span style="font-size:16px;">Quản lý khám sức khỏe</span></li>
+                                        <li><span style="font-size:16px;">Quản lý cấp cứu</span></li>
+                                        <li><span style="font-size:16px;">Đặt lịch khám bệnh trực tuyến</span></li>
+                                    </ul>
+                                </td>
+                                <td><span style="font-size:16px;">10.000.000 VNĐ</span></td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;"><strong><span style="font-size:16px;">Bệnh
+                                    viện</span></strong>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li><span style="font-size:16px;">Quản lý tiếp đón</span></li>
+                                        <li><span style="font-size:16px;">Quản lý khoa phòng</span></li>
+                                        <li><span style="font-size:16px;">Quản lý bệnh nhân điều trị ngoại
+                                            trú</span></li>
+                                        <li><span style="font-size:16px;">Quản lý bệnh nhân điều trị nội trú</span>
+                                        </li>
+                                        <li><span style="font-size:16px;">Quản lý kế toán - Thu ngân</span></li>
+                                        <li><span style="font-size:16px;">Quản lý kho thuốc – vật tư y tế</span>
+                                        </li>
+                                        <li><span style="font-size:16px;">Quản lý đội ngũ y bác sĩ, nhân viên</span>
+                                        </li>
+                                        <li><span style="font-size:16px;">Quản lý và tạo lập đơn thuốc</span></li>
+                                        <li><span style="font-size:16px;">Kết nối máy ngoại vi</span></li>
+                                        <li><span style="font-size:16px;">Thống kê, báo cáo</span></li>
+                                        <li><span style="font-size:16px;">Lưu trữ lịch sử, hồ sơ khám bệnh</span>
+                                        </li>
+                                        <li><span style="font-size:16px;">Hẹn lịch khám, nhắc lịch khám</span></li>
+                                        <li><span style="font-size:16px;">In tem bệnh nhân</span></li>
+                                        <li><span style="font-size:16px;">Quản lý viện phí</span></li>
+                                        <li><span style="font-size:16px;">Liên thông BHXH</span></li>
+                                        <li><span style="font-size:16px;">Quản lý khám sức khỏe</span></li>
+                                        <li><span style="font-size:16px;">Đặt lịch khám bệnh trực tuyến</span></li>
+                                        <li><span style="font-size:16px;">Quản lý cấp cứu</span></li>
+                                        <li><span style="font-size:16px;">Quản lý đấu thầu</span></li>
+                                        <li><span style="font-size:16px;">Quản lý quá trình đào tạo tuyến</span>
+                                        </li>
+                                        <li><span style="font-size:16px;">Quản lý chương trình y tế</span></li>
+                                        <li><span style="font-size:16px;">Tích hợp thêm modun nâng cao</span></li>
+                                    </ul>
+                                </td>
+                                <td><span style="font-size:16px;">25.000.000 VNĐ</span></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p>
+                        Công ty phần mềm trực tuyến Nencer Software là đơn vị hàng đầu chuyên thiết kế web đổi
+                        thẻ cào, làm web bán thẻ cào, làm web gạch thẻ tự động, web gạch cước tự động uy tín
+                        chuyên nghiệp trên toàn quốc, đã thực hiện rất nhiều dự án thiết kế website gạch thẻ
+                        cào, web nạp cước thành công cho khách hàng.
+                    </p>
+                    <p>
+                        Với kinh nghiệm hơn 10 năm trong lĩnh vực lập trình web và đội ngũ kỹ thuật giỏi chuyên
+                        môn, chuyên nghiệp trong công việc Nencer Software sẽ đáp ứng tất cả các yêu cầu của
+                        khách hàng. Ngoài ra chúng tôi sẽ hỗ trợ, hướng dẫn khách hàng vận hành, khai thác hệ
+                        thống với hiệu quả tốt nhất và tư vấn miễn phí khách hàng về marketing online.
+                    </p>
+                </div>
+                <div class="article-bottom">
+                    <div class="row g-4 align-items-center flex-column flex-md-row">
+                        <div class="col-auto flex-shrink-0 mb-1 mb-md-0">
+                            <div class="article-meta hstack gap-15px">
+                                <div class="article-meta_item">
+                                    <i class="far fa-clock"></i>
+                                    <span>11-10-2023</span>
+                                </div>
+                                <div class="article-meta_item">
+                                    <i class="far fa-eye"></i>
+                                    <span>23 Lượt xem</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-auto flex-grow-1 d-flex justify-content-md-end">
+                            <div class="article-social">
+                                <ul class="list-unstyled mb-0 d-flex flex-sm-nowrap justify-content-sm-end justify-content-center flex-wrap gap-5px">
+                                    <li class="article-social_share">
+                                        Chia sẻ:
+                                    </li>
+                                    <li>
+                                        <div class="fb-share-button fb_iframe_widget"
+                                             data-href="https://jaybee-k.github.io/template-nencer-v3"
+                                             data-layout="button" data-size="small" fb-xfbml-state="rendered"
+                                             fb-iframe-plugin-query="app_id=&amp;container_width=46&amp;href=https%3A%2F%2Fjaybee-k.github.io%2Ftemplate-nencer-v3&amp;layout=button&amp;locale=vi_VN&amp;sdk=joey&amp;size=small">
+                                            <span style="vertical-align: bottom; width: 76px; height: 20px;">
+                                                <iframe name="fb76b12d044284675" width="1000px" height="1000px"
+                                                        data-testid="fb:share_button Facebook Social Plugin"
+                                                        title="fb:share_button Facebook Social Plugin" frameborder="0"
+                                                        allowtransparency="true" allowfullscreen="true" scrolling="no"
+                                                        allow="encrypted-media"
+                                                        src="https://www.facebook.com/v16.0/plugins/share_button.php?app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df8e1a6905aee2ba28%26domain%3D%26is_canvas%3Dfalse%26origin%3Dfile%253A%252F%252F%252Ffcf58bc0ce7b5c925%26relation%3Dparent.parent&amp;container_width=46&amp;href=https%3A%2F%2Fjaybee-k.github.io%2Ftemplate-nencer-v3&amp;layout=button&amp;locale=vi_VN&amp;sdk=joey&amp;size=small"
+                                                        style="border: none; visibility: visible; width: 76px; height: 20px;"
+                                                        class=""></iframe>
+                                            </span></div>
+                                    </li>
+                                    <li>
+                                        <iframe id="telegram-share-aHR0cHM6Ly9qYXliZWUtay5naXRodWIuaW8vdGVtcGxhdGUtbmVuY2VyLXYz"
+                                                src="https://t.me/share/embed?origin=file%3A%2F%2F&amp;telegram-share-url=https%3A%2F%2Fjaybee-k.github.io%2Ftemplate-nencer-v3&amp;comment=C%C3%94NG%20TY%20PH%E1%BA%A6N%20M%E1%BB%80M%20TR%E1%BB%B0C%20TUY%E1%BA%BEN%20NENCER"
+                                                width="60" height="20" frameborder="0" scrolling="no"
+                                                style="overflow: hidden; color-scheme: light dark; border: none;"></iframe>
+                                        <script src="https://connect.facebook.net/vi_VN/sdk.js?hash=219e24ebcbd2e9cc8206e6c821381114"
+                                                async="" crossorigin="anonymous"></script>
+                                        <script async="" src="//za.zdn.vn/v3/za.js?19771"></script>
+                                        <script async="" src="https://telegram.org/js/telegram-widget.js"
+                                                data-telegram-share-url="https://jaybee-k.github.io/template-nencer-v3"
+                                                data-comment="CÔNG TY PHẦN MỀM TRỰC TUYẾN NENCER"></script>
+                                    </li>
+                                    <li>
+                                        <div class="zalo-share-button"
+                                             data-href="https://jaybee-k.github.io/template-nencer-v3"
+                                             data-oaid="579745863508352884" data-color="blue" data-customize="false"
+                                             style="position: relative; display: inline-block; width: 70px; height: 20px;">
+                                            <iframe id="c890c26d-2034-4bbc-a382-01be9232c7a2"
+                                                    name="c890c26d-2034-4bbc-a382-01be9232c7a2" frameborder="0"
+                                                    allowfullscreen="" scrolling="no" width="70px" height="20px"
+                                                    src="https://button-share.zalo.me/share_inline?id=c890c26d-2034-4bbc-a382-01be9232c7a2&amp;layout=1&amp;color=blue&amp;customize=false&amp;width=70&amp;height=20&amp;isDesktop=true&amp;url=https%3A%2F%2Fjaybee-k.github.io%2Ftemplate-nencer-v3&amp;d=eyJ1cmwiOiJodHRwczovL2pheWJlZS1rLmdpdGh1Yi5pby90ZW1wbGF0ZS1uZW5jZXItdjMifQ%253D%253D&amp;shareType=0"
+                                                    style="position: absolute; z-index: 99; top: 0px; left: 0px;"></iframe>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <iframe id="twitter-widget-0" scrolling="no" frameborder="0"
+                                                allowtransparency="true" allowfullscreen="true"
+                                                class="twitter-share-button twitter-share-button-rendered twitter-tweet-button"
+                                                style="position: static; visibility: visible; width: 88px; height: 20px;"
+                                                title="X Post Button"
+                                                src="https://platform.twitter.com/widgets/tweet_button.2f70fb173b9000da126c79afe2098f02.vi.html#dnt=false&amp;id=twitter-widget-0&amp;lang=vi&amp;original_referer=file%3A%2F%2F%2FD%3A%2FJobs%2FMr.Nghia%2Ftemplate-netpay-v3%2Fchi-tiet-tin-tuc.html&amp;size=m&amp;text=C%C3%94NG%20TY%20PH%E1%BA%A6N%20M%E1%BB%80M%20TR%E1%BB%B0C%20TUY%E1%BA%BEN%20NENCER&amp;time=1708227806368&amp;type=share&amp;url=https%3A%2F%2Fjaybee-k.github.io%2Ftemplate-nencer-v3"
+                                                data-url="https://jaybee-k.github.io/template-nencer-v3"></iframe>
+                                        <script async="" src="https://platform.twitter.com/widgets.js"
+                                                charset="utf-8"></script>
+                                    </li>
+                                    <li>
+                                        <script src="https://platform.linkedin.com/in.js"
+                                                type="text/javascript">lang: vi_VN</script>
+                                        <span class="IN-widget"
+                                              data-lnkd-debug="<script type=&quot;IN/Share+init&quot; data-url=&quot;https://jaybee-k.github.io/template-nencer-v3&quot;></script>"
+                                              style="display: inline-block; line-height: 1; vertical-align: bottom; padding: 0px; margin: 0px; text-indent: 0px; text-align: center;"><span
+                                                style="padding: 0px !important; margin: 0px !important; text-indent: 0px !important; display: inline-block !important; vertical-align: bottom !important; font-size: 1px !important;">
+                                            <button class="IN-bf195e49-eb86-4856-9b9f-1c8710d456be-1G9ISYhSF8XoOmdcl0yKDu">
+                                                <xdoor-icon aria-hidden="true">
+                                                    <svg viewBox="0 0 24 24" width="24px" height="24px" x="0" y="0"
+                                                         preserveAspectRatio="xMinYMin meet">
+                                                        <g style="fill: currentColor">
+                                                            <rect x="-0.003" style="fill:none;" width="24"
+                                                                  height="24"></rect>
+                                                            <path style=""
+                                                                  d="M20,2h-16c-1.1,0-2,0.9-2,2v16c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V4C22,2.9,21.1,2,20,2zM8,19h-3v-9h3V19zM6.5,8.8C5.5,8.8,4.7,8,4.7,7s0.8-1.8,1.8-1.8S8.3,6,8.3,7S7.5,8.8,6.5,8.8zM19,19h-3v-4c0-1.4-0.6-2-1.5-2c-1.1,0-1.5,0.8-1.5,2.2V19h-3v-9h2.9v1.1c0.5-0.7,1.4-1.3,2.6-1.3c2.3,0,3.5,1.1,3.5,3.7V19z"></path>
+                                                        </g>
+                                                    </svg>
+                                                </xdoor-icon>
+                                                Share
+                                            </button>
+                                        </span></span>
+                                    </li>
+                                    <li class="share-pinterest">
+                                        <a target="_blank"
+                                           href="http://pinterest.com/pin/create/button/?url=https://jaybee-k.github.io/template-nencer-v3&amp;description=CÔNG TY PHẦN MỀM TRỰC TUYẾN NENCER">
+                                            <span>
+                                                <img src="./assets/images/logo-pinterest.svg" width="20px" height="20px"
+                                                     class="align-middle img-fluid" alt="">
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-gap">
+        <div class="container">
+            <div class="section-heading d-lg-flex align-items-center justify-content-between mb-4">
+                <div class="heading-page">
+                    Tin tức liên quan
+                </div>
+            </div>
+            <div class="row g-4 row-cols-1 row-cols-sm-2 row-cols-lg-4">
+                <div class="col">
+                    <div class="card article-card border-0 overflow-hidden">
+                        <div class="card-header p-0 border-0 transition-default overflow-hidden">
+                            <div class="ratio ratio-3x2">
+                                <img src="./assets/images/article/bull-1068x601.jpeg.webp"
+                                     class="img-fluid transition-default"
+                                     alt=""/>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title limit">
+                                Nhà phân tích tiết lộ 3 dấu hiệu giúp bạn biết khi nào Bitcoin sắp đạt đỉnh
+                            </div>
+                            <div class="card-text limit">
+                                <p>
+                                    Dennis Liu, hay còn gọi là Virtual Bacon, đưa ra kế hoạch rút lui chiến lược cho
+                                    Bitcoin.Ông đề xuất một kế hoạch rút...
+                                    Dennis Liu, hay còn gọi là Virtual Bacon, đưa ra kế hoạch rút lui chiến lược cho
+                                    Bitcoin.Ông đề xuất một kế hoạch rút...
+                                </p>
+                            </div>
+                        </div>
+                        <a href="" class="stretched-link"></a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card article-card border-0 overflow-hidden">
+                        <div class="card-header p-0 border-0 transition-default overflow-hidden">
+                            <div class="ratio ratio-3x2">
+                                <img src="./assets/images/article/japan.png.webp"
+                                     class="img-fluid transition-default"
+                                     alt=""/>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title limit">
+                                Giá bitcoin đã phá kỷ lục ở Nhật Bản, cặp Bitcoin/Yen đạt mức cao mới
+                            </div>
+                            <div class="card-text limit">
+                                <p>
+                                    Dennis Liu, hay còn gọi là Virtual Bacon, đưa ra kế hoạch rút lui chiến lược cho
+                                    Bitcoin.Ông đề xuất một kế hoạch rút...
+                                    Dennis Liu, hay còn gọi là Virtual Bacon, đưa ra kế hoạch rút lui chiến lược cho
+                                    Bitcoin.Ông đề xuất một kế hoạch rút...
+                                </p>
+                            </div>
+                        </div>
+                        <a href="" class="stretched-link"></a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card article-card border-0 overflow-hidden">
+                        <div class="card-header p-0 border-0 transition-default overflow-hidden">
+                            <div class="ratio ratio-3x2">
+                                <img src="./assets/images/article/china-1068x592.jpg.webp"
+                                     class="img-fluid transition-default"
+                                     alt=""/>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title limit">
+                                Các nhà phân tích chỉ ra Trung Quốc là nguyên nhân đằng sau đợt tăng của BTC hôm qua
+                            </div>
+                            <div class="card-text limit">
+                                <p>
+                                    Dennis Liu, hay còn gọi là Virtual Bacon, đưa ra kế hoạch rút lui chiến lược cho
+                                    Bitcoin.Ông đề xuất một kế hoạch rút...
+                                    Dennis Liu, hay còn gọi là Virtual Bacon, đưa ra kế hoạch rút lui chiến lược cho
+                                    Bitcoin.Ông đề xuất một kế hoạch rút...
+                                </p>
+                            </div>
+                        </div>
+                        <a href="" class="stretched-link"></a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card article-card border-0 overflow-hidden">
+                        <div class="card-header p-0 border-0 transition-default overflow-hidden">
+                            <div class="ratio ratio-3x2">
+                                <img src="./assets/images/article/bull-1068x601.jpeg.webp"
+                                     class="img-fluid transition-default"
+                                     alt=""/>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title limit">
+                                Nhà phân tích tiết lộ 3 dấu hiệu giúp bạn biết khi nào Bitcoin sắp đạt đỉnh
+                            </div>
+                            <div class="card-text limit">
+                                <p>
+                                    Dennis Liu, hay còn gọi là Virtual Bacon, đưa ra kế hoạch rút lui chiến lược cho
+                                    Bitcoin.Ông đề xuất một kế hoạch rút...
+                                    Dennis Liu, hay còn gọi là Virtual Bacon, đưa ra kế hoạch rút lui chiến lược cho
+                                    Bitcoin.Ông đề xuất một kế hoạch rút...
+                                </p>
+                            </div>
+                        </div>
+                        <a href="" class="stretched-link"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer id="footer" class="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="footer-item">
+                        <a href="" class="d-inline-block footer-logo">
+                            <img src="./assets/images/logo.png" class="img-fluid footer-logo_image" alt="">
+                        </a>
+                        <div class="footer-title">
+                            Sàn giao dịch tiền điện tử lớn nhất Việt Nam
+                        </div>
+                        <div class="footer-sub">
+                            Giúp giao dịch tiền điện tử của bạn trở nên dễ dàng và an toàn nhất
+                        </div>
+                        <div class="footer-contact">
+                            <div class="footer-contact_item">
+                                Hotline:
+                                <a href="" class="d-inline-block color-inherit fw-bold">
+                                    0977 461 416
+                                </a>
+                            </div>
+                            <div class="footer-contact_item">
+                                Email:
+                                <a href="" class="d-inline-block color-inherit fw-bold">
+                                    danhmay24h@gmail.com
+                                </a>
+                            </div>
+                        </div>
+                        <div class="footer-social">
+                            <a href="" class="footer-social_item">
+                                <img src="./assets/images/social/facebook.png" class="rounded-circle img-fluid" alt="">
+                            </a>
+                            <a href="" class="footer-social_item">
+                                <img src="./assets/images/social/instagram.png" class="rounded-circle img-fluid" alt="">
+                            </a>
+                            <a href="" class="footer-social_item">
+                                <img src="./assets/images/social/zalo.png" class="rounded-circle img-fluid" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="row g-4">
+                        <div class="col-6 col-lg-4">
+                            <div class="footer-list">
+                                <div class="footer-list_title">
+                                    Mua tiền ảo
+                                </div>
+                                <div class="footer-list_items">
+                                    <a href="" class="d-inline-block footer-list_item">
+                                        Mua Bitcoin
+                                    </a>
+                                    <a href="" class="d-inline-block footer-list_item">
+                                        Mua ETH
+                                    </a>
+                                    <a href="" class="d-inline-block footer-list_item">
+                                        Mua Usdt
+                                    </a>
+                                    <a href="" class="d-inline-block footer-list_item">
+                                        Mua Perfectmoney
+                                    </a>
+                                    <a href="" class="d-inline-block footer-list_item">
+                                        Mua Webmoney
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-4">
+                            <div class="footer-list">
+                                <div class="footer-list_title">
+                                    Bán tiền ảo
+                                </div>
+                                <div class="footer-list_items">
+                                    <a href="" class="d-inline-block footer-list_item">
+                                        Bán Bitcoin
+                                    </a>
+                                    <a href="" class="d-inline-block footer-list_item">
+                                        Bán ETH
+                                    </a>
+                                    <a href="" class="d-inline-block footer-list_item">
+                                        Bán Usdt
+                                    </a>
+                                    <a href="" class="d-inline-block footer-list_item">
+                                        Bán Perfectmoney
+                                    </a>
+                                    <a href="" class="d-inline-block footer-list_item">
+                                        Bán Webmoney
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-4">
+                            <div class="footer-list">
+                                <div class="footer-list_title">
+                                    Thông tin
+                                </div>
+                                <div class="footer-list_items">
+                                    <a href="" class="d-inline-block footer-list_item">
+                                        vnexmoney.com là web SCAM
+                                    </a>
+                                    <a href="" class="d-inline-block footer-list_item">
+                                        Quản lý rủi ro
+                                    </a>
+                                    <a href="" class="d-inline-block footer-list_item">
+                                        Quy định sử dụng
+                                    </a>
+                                    <a href="" class="d-inline-block footer-list_item">
+                                        Hướng dẫn sử dụng
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row g-3 align-items-center flex-column-reverse flex-lg-row">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <a href="" class="d-inline-block text-white footer-copyright">
+                        ©Software by santiendientu Jsc.,
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <div class="footer-partner hstack justify-content-lg-end justify-content-center">
+                        <a href="" class="footer-partner_item">
+                            <img src="./assets/images/pm_cert.png" class="img-fluid" alt="">
+                            U5553623
+                        </a>
+                        <a href="" class="footer-partner_item">
+                            <img src="./assets/images/v_blue_on_white_en.png" class="img-fluid" alt="">
+                            292211010733
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type=" text/javascript" src="./assets/plugins/jquery.min.js"></script>
+<script type="text/javascript"
+        src="./assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/swiper/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/fancybox/fancybox.min.js"></script>
+<script type="text/javascript" src="./assets/js/app.js"></script>
+</body>
+</html>

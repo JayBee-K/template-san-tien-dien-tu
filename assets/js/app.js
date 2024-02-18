@@ -168,11 +168,11 @@ const handleViewPass = function () {
         let elm = $(this),
             elmID = elm.attr('data-id');
         if (elm.hasClass('is-show')) {
-            elm.html('<i class="fal fa-eye">');
+            elm.html('<i class="fas fa-eye">');
             elm.removeClass('is-show');
             $('#' + elmID).attr('type', 'password');
         } else {
-            elm.html('<i class="fal fa-eye-slash">');
+            elm.html('<i class="fas fa-eye-slash">');
             elm.addClass('is-show');
             $('#' + elmID).attr('type', 'text');
         }
