@@ -336,6 +336,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	background-color: #e9ecef;
 }
 
 .section-hero_small {
@@ -377,7 +378,7 @@
 	border-radius: 2px;
 	height: 5px;
 	width: 12px;
-	background-color: #e0e3ed;
+	background-color: #d0d0d0;
 	opacity: 1;
 	transition: var(--transition-default);
 }
@@ -931,6 +932,7 @@
 
 .table-item.table-price {
 	padding: 0;
+	border-radius: 0;
 }
 
 .table-item.table-price.table-scroll .table-inner {
