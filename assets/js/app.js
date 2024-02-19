@@ -225,6 +225,30 @@ $(function () {
         });
     }
 
+	if ($('#slider-table').length) {
+		new Swiper('#slider-table .swiper', {
+			speed: 500,
+			preloadImages: false,
+			spaceBetween: 15,
+			loop: false,
+			pagination: {
+				el: "#slider-table .swiper-pagination",
+				clickable: true
+			},
+			breakpoints: {
+				320: {
+					slidesPerView: 1.15,
+				},
+				768: {
+					slidesPerView: 2.15,
+				},
+				1200: {
+					slidesPerView: 3,
+				}
+			},
+		});
+	}
+
     if ($('.tabHandle').length) {
         $('.tabHandle').on('show.bs.tab', function () {
             let target = $(this).attr('data-id');
