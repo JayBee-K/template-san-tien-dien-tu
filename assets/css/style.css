@@ -624,12 +624,25 @@
 	z-index: 2;
 }
 
+.exchange-card .exchange-card_header .nav-tabs.nav-tabs_second .nav-item + .nav-item .nav-link:after {
+	right: -10px;
+	bottom: 0;
+	content: " ";
+	position: absolute;
+	top: 0;
+	width: 24px;
+	transform: skewX(15deg);
+	background: var(--bs-white);
+	z-index: 2;
+	display: block;
+}
+
 .exchange-card .exchange-card_header .nav-tabs .nav-item .nav-link:hover {
 	isolation: auto;
 }
 
 .exchange-card .exchange-card_header .nav-tabs .nav-item .nav-link.active {
-	background-color: var(--primary-color);
+	background-color: var(--primary-color) !important;
 	color: var(--bs-white);
 	z-index: 10;
 }

@@ -338,23 +338,23 @@
 		font-size: 1.3em;
 	}
 
-	.exchange-card .exchange-card_header .nav-tabs .nav-item {
+	.exchange-card .exchange-card_header .nav-tabs:not(.nav-tabs_second) .nav-item {
 		width: 20%;
 	}
 
-	.exchange-card .exchange-card_header .nav-tabs .nav-item:nth-child(3) {
+	.exchange-card .exchange-card_header .nav-tabs:not(.nav-tabs_second) .nav-item:nth-child(3) {
 		width: 25%;
 	}
 
-	.exchange-card .exchange-card_header .nav-tabs .nav-item:nth-child(4) {
+	.exchange-card .exchange-card_header .nav-tabs:not(.nav-tabs_second) .nav-item:nth-child(4) {
 		width: 35%;
 	}
 
-	.exchange-card .exchange-card_header .nav-tabs .nav-item + .nav-item .nav-link:before {
+	.exchange-card .exchange-card_header .nav-tabs:not(.nav-tabs_second) .nav-item + .nav-item .nav-link:before {
 		width: 16px;
 	}
 
-	.exchange-card .exchange-card_header .nav-tabs .nav-item .nav-link:after {
+	.exchange-card .exchange-card_header .nav-tabs:not(.nav-tabs_second) .nav-item .nav-link:after {
 		width: 16px;
 	}
 
@@ -363,6 +363,18 @@
 		white-space: nowrap;
 		padding-left: 8px;
 		padding-right: 8px;
+	}
+
+	.exchange-card .exchange-card_header .nav-tabs.nav-tabs_second .nav-item {
+		width: 33.3333%;
+	}
+
+	.exchange-card .exchange-card_header .nav-tabs.nav-tabs_second .nav-item:last-child .nav-link {
+		padding-right: 32px;
+	}
+
+	.exchange-card .exchange-card_header .nav-tabs.nav-tabs_second .nav-item:first-child .nav-link {
+		padding-left: 24px;
 	}
 
 	.table-item {
