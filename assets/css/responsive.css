@@ -409,6 +409,20 @@
 
 	.article-detail .article-title {
 		font-size: 1.3em;
+		text-align: center;
+	}
+
+	.article-detail .section-breadcrumb .breadcrumb {
+		justify-content: center;
+	}
+
+	.article-detail .section-breadcrumb .breadcrumb .breadcrumb-item{
+		display: none;
+	}
+
+	.article-detail .section-breadcrumb .breadcrumb .breadcrumb-item:nth-child(1),
+	.article-detail .section-breadcrumb .breadcrumb .breadcrumb-item:nth-child(2){
+		display: block;
 	}
 
 	.detail-content {
