@@ -844,6 +844,7 @@
 	height: 100%;
 	display: flex;
 	flex-direction: column;
+	padding: 25px;
 }
 
 .table-item .table-header {
@@ -883,6 +884,14 @@
 	max-height: 505px;
 	overflow-y: auto;
 	overflow-x: hidden;
+}
+
+.table-item.table-price {
+	padding: 0;
+}
+
+.table-item.table-price.table-scroll .table-inner{
+	padding-right: 15px;
 }
 
 .table-responsive::-webkit-scrollbar {
