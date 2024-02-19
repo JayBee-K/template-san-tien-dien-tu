@@ -75,7 +75,7 @@
 	align-items: center;
 	font-weight: 500;
 	gap: 3px;
-	padding: 16px 0;
+	padding: 22px 0;
 	font-size: 1.075em;
 }
 
@@ -102,7 +102,7 @@
 	align-items: center;
 	font-weight: 500;
 	gap: 3px;
-	padding: 16px 0;
+	padding: 22px 0;
 	font-size: 1.075em;
 	background-color: transparent;
 	border: 0;
@@ -172,7 +172,7 @@
 
 .header .header-action .header-language .header-language_button {
 	display: block;
-	padding: 16px 0;
+	padding: 22px 0;
 	border: 0;
 	background-color: transparent;
 	outline: none;
@@ -327,6 +327,18 @@
 	background-repeat: no-repeat;
 	min-height: 70vh;
 	padding-top: 125px;
+	padding-bottom: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.section-hero_small {
+	background-image: url('../images/hero/theme-bg.svg');
+	background-size: 100% 70vh;
+	background-repeat: no-repeat;
+	min-height: 70vh;
+	padding-top: 65px;
 	padding-bottom: 30px;
 	display: flex;
 	flex-direction: column;
@@ -864,6 +876,19 @@
 	font-size: 1.15em;
 	font-weight: 700;
 	padding: 10px 15px 10px 25px;
+	position: relative;
+}
+
+.table-item .table-header .table-header_sub {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	background-color: transparent;
+	color: var(--bs-black);
+	font-size: 1.3em;
+	font-weight: 700;
+	padding: 10px 15px 10px 15px;
 	position: relative;
 }
 
