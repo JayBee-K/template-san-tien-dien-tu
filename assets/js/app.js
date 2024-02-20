@@ -214,42 +214,6 @@ const handleDropdownListCoin = function () {
 				)
 			})
 		})
-
-
-
-/*		$('.handleDropdownCoin .handleDropdownPreview').click(function () {
-			let dropdownCoinPreview = $(this),
-				dropdownCoin = dropdownCoinPreview.closest('.handleDropdownCoin');
-
-			if (dropdownCoin.hasClass('is-show')) {
-				dropdownCoin.removeClass('is-show')
-			} else {
-				dropdownCoin.addClass('is-show')
-			}
-		});
-
-		$('.handleDropdownCoin .dropdownCoinItem').click(function () {
-			let dropdownCoinItem = $(this),
-				dropdownCoin = dropdownCoinItem.closest('.handleDropdownCoin'),
-				dropdownCoinPreview = dropdownCoin.find('.handleDropdownPreview'),
-				htmlPreview = `<img src="${dropdownCoinItem.attr('data-src')}" class="img-fluid"
-								     alt="${dropdownCoinItem.attr('data-name')}">
-								${dropdownCoinItem.attr('data-name')}
-								<i class="fas fa-caret-down"></i>`;
-
-			$('.handleDropdownCoin .dropdownCoinItem').removeClass('active');
-			dropdownCoinItem.addClass('active');
-			dropdownCoinPreview.html(htmlPreview);
-			dropdownCoin.removeClass('is-show');
-		});
-
-		$(document).mouseup(function (e) {
-			let elm = $('.handleDropdownCoin.is-show');
-			let elmList = $('.handleDropdownCoin.is-show .handleDropdownList');
-			elmList.is(e.target) || 0 !== elmList.has(e.target).length || (
-				elm.removeClass('is-show')
-			)
-		})*/
 	}
 }
 
