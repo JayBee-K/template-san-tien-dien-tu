@@ -1771,3 +1771,71 @@
 	height: 20px !important;
 	line-height: 20px;
 }
+
+
+.volatile-card {
+	padding: 10px 8px;
+	border-radius: 6px;
+	border: 1px solid var(--bs-gray-300);
+	height: 100%;
+	background-color: var(--bs-white);
+}
+
+.volatile-card .volatile-card_list {
+	display: flex;
+	flex-direction: column;
+}
+
+.volatile-card .volatile-card_list .volatile-item {
+	display: flex;
+	align-items: center;
+	padding: 10px 12px;
+	border-radius: 6px;
+	transition: var(--transition-default);
+	position: relative;
+	overflow: hidden;
+}
+
+.volatile-card .volatile-card_list .volatile-item:hover {
+	background-color: #f1f1f1;
+}
+
+.volatile-card .volatile-card_list .volatile-item .volatile-item_image {
+	margin-right: 6px;
+}
+
+.volatile-card .volatile-card_list .volatile-item .volatile-item_image > img {
+	width: 22px;
+	height: 22px;
+}
+
+.volatile-card .volatile-card_list .volatile-item .volatile-item_title {
+	font-weight: 700;
+}
+
+.volatile-card .volatile-card_list .volatile-item .volatile-item_price {
+	margin-left: auto;
+	display: flex;
+	align-items: center;
+	font-weight: 700;
+	font-size: 0.925em;
+}
+
+.volatile-card .volatile-card_list .volatile-item .volatile-item_success,
+.volatile-card .volatile-card_list .volatile-item .volatile-item_danger,
+.volatile-card .volatile-card_list .volatile-item .volatile-item_secondary {
+	margin-left: 8px;
+}
+
+.volatile-card .volatile-card_list .volatile-item .volatile-item_success {
+	color: var(--bs-success);
+}
+
+.volatile-card .volatile-card_list .volatile-item .volatile-item_danger {
+	color: var(--bs-danger);
+}
+
+.volatile-card .volatile-card_list .volatile-item .volatile-item_secondary {
+	color: #212529;
+	font-weight: 400;
+}
