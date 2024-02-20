@@ -851,17 +851,125 @@
 	height: calc(100% - 16px);
 	padding-left: 10px;
 	padding-right: 10px;
-	pointer-events: none;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-	-webkit-box-shadow: 0 16px 32px rgba(33, 35, 37, .06);
-	box-shadow: 0 16px 32px rgba(33, 35, 37, .06);
+	-webkit-box-shadow: 0 16px 32px rgba(33, 35, 37, .1);
+	box-shadow: 0 16px 32px rgba(33, 35, 37, .1);
 	font-weight: 500;
 	color: var(--bs-black);
 	font-size: .925em;
+	cursor: pointer;
+	border: 1px solid transparent;
+	transition: var(--transition-default);
+}
+
+.form-theme .form-theme_group .form-theme_append > img {
+	width: 18px;
+	height: 18px;
+	margin-right: 3px;
+}
+
+.form-theme .form-theme_group .form-theme_append > i {
+	transition: .3s transform ease;
+}
+
+.form-theme .form-theme_group .form-theme_dropdown {
+	position: absolute;
+	top: calc(100% - 8px);
+	right: 8px;
+	background-color: var(--bs-white);
+	-webkit-transform: translateY(15px);
+	-ms-transform: translateY(15px);
+	transform: translateY(15px);
+	-webkit-transform-origin: center top;
+	-ms-transform-origin: center top;
+	transform-origin: center top;
+	-webkit-transition: all .3s cubic-bezier(.645, .045, .355, 1);
+	-o-transition: all .3s cubic-bezier(.645, .045, .355, 1);
+	transition: all .3s cubic-bezier(.645, .045, .355, 1);
+	will-change: transform;
+	-webkit-box-shadow: 0 12px 30px rgba(45, 56, 68, .25);
+	box-shadow: 0 12px 30px rgba(45, 56, 68, .25);
+	width: -webkit-max-content;
+	width: -moz-max-content;
+	width: max-content;
+	display: flex;
+	flex-direction: column;
+	border-top: 1px solid var(--bs-gray-300);
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+	min-width: 83px;
+	max-height: 290px;
+	overflow-y: auto;
+	z-index: 2;
+}
+
+.form-theme .form-theme_group .form-theme_dropdown::-webkit-scrollbar {
+	width: 3px;
+	height: 10px
+}
+
+.form-theme .form-theme_group .form-theme_dropdown::-webkit-scrollbar-thumb {
+	background-color: #a8a8a85e
+}
+
+.form-theme .form-theme_group .form-theme_dropdown::-webkit-scrollbar-track {
+	background-color: #f1f1f1
+}
+
+.form-theme .form-theme_group .form-theme_dropdown .dropdown-coins_item {
 	border: 0;
+	background-color: transparent;
+	outline: none;
+	box-shadow: none;
+	color: var(--bs-black);
+	font-size: .925em;
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	font-weight: 500;
+	gap: 3px;
+	padding: 6px 10px;
+	width: 100%;
+	transition: var(--transition-default);
+}
+
+.form-theme .form-theme_group .form-theme_dropdown .dropdown-coins_item:hover {
+	color: var(--primary-color);
+	background-color: #e9ecef;
+}
+
+.form-theme .form-theme_group .form-theme_dropdown .dropdown-coins_item.active {
+	color: var(--bs-white);
+	background-color: var(--primary-color);
+}
+
+.form-theme .form-theme_group .form-theme_dropdown .dropdown-coins_item img {
+	width: 18px;
+	height: 18px;
+	margin-right: 3px;
+}
+
+.form-theme .form-theme_group.is-show .form-theme_append {
+	-webkit-box-shadow: 0 16px 32px rgba(33, 35, 37, .16);
+	box-shadow: 0 16px 32px rgba(33, 35, 37, .16);
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.form-theme .form-theme_group.is-show .form-theme_append > i {
+	transform: rotate(180deg);
+}
+
+.form-theme .form-theme_group.is-show .form-theme_dropdown {
+	opacity: 1;
+	visibility: visible;
+	pointer-events: auto;
+	-webkit-transform: translateY(0);
+	-ms-transform: translateY(0);
+	transform: translateY(0);
 }
 
 .form-theme .form-theme_group .form-theme_append.form-theme_append__danger {
@@ -871,8 +979,10 @@
 	-ms-user-select: auto;
 	user-select: auto;
 	background-color: #fceeee;
-	border: 1px solid #cb1515;
+	border: 1px solid #cb1515 !important;
 	color: #d90606;
+	-webkit-box-shadow: 0 16px 32px rgba(33, 35, 37, .06) !important;
+	box-shadow: 0 16px 32px rgba(33, 35, 37, .06) !important;
 }
 
 .form-theme .form-theme_group .form-theme_append.form-theme_append__success {
@@ -882,8 +992,10 @@
 	-ms-user-select: auto;
 	user-select: auto;
 	background-color: #f0fff1;
-	border: 1px solid #84e194;
+	border: 1px solid #84e194 !important;
 	color: #28a745;
+	-webkit-box-shadow: 0 16px 32px rgba(33, 35, 37, .06) !important;
+	box-shadow: 0 16px 32px rgba(33, 35, 37, .06) !important;
 }
 
 .form-theme .form-theme_group .form-theme_button {
@@ -1376,7 +1488,7 @@
 	border-radius: 4px;
 }
 
-.section-sidebar  .article-item .article-item_image {
+.section-sidebar .article-item .article-item_image {
 	width: 35%;
 }
 
