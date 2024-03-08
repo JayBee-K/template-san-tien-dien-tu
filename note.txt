@@ -1,0 +1,2 @@
+trang mua.html
+header tab đổi thành màu xám
